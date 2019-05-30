@@ -22,6 +22,17 @@ module.exports = {
         disableHostCheck: true,
         headers: {"Access-Control-Allow-Origin": "*"},
         https: false
+    },
+    plugis: [
+        new HtmlWebpackPlugin({
+            template: 'src/index.html',
+            favicon: 'src/favicon.ico'
+        })
+    ],
+    module: {
+        rules: [
+           { test: /\.(js|jsx)/ },
+        ]
     }
 }
 
