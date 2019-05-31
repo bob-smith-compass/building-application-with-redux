@@ -1,0 +1,9 @@
+.container {
+    display: inline-flex;
+}
+
+div {
+    min-height: 50px;
+    min-width: 50px;
+    background-color: antiquewhite;
+}
