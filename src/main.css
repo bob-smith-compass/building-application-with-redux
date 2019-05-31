@@ -23,6 +23,7 @@ ul#flex-container {
     padding-top: 45px;
     margin: 0;
     padding: 0;
+    display: flex;
 
 }
 ul li {
