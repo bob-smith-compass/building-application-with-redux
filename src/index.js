@@ -4,14 +4,19 @@ import './main.css'
 
 function Hi() {
     return (<div id="container">
-        <ul id="container">
-
+        <ul id="flex-container">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
         </ul>
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
+    <div className="flex-item">1</div>
+    <div className="flex-item">2</div>
+    <div className="flex-item">3</div>
+    <div className="flex-item">4</div>
+    <div className="flex-item">5</div>
         </div>)
 }
 
