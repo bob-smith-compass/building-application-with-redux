@@ -35,7 +35,7 @@ ul li {
     font-size: 2.2em;
     text-align: center; 
 }
-ul li:first-child { background-color: #c2d775;}
+ul li:first-child { background-color: #c2d775; order: 2;}
 ul li:nth-child(2) { background-color: #007278;}
 ul li:nth-child(3) { background-color: #c7b600; flex-grow: 2;}
 ul li:nth-child(4) { background-color: #a90077;}
