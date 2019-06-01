@@ -1,6 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './main.css'
+import Home from './components/home/Home';
+import {BrowserRouter as Router} from 'react-router-dom'
+import "bootstrap/dist/css/bootstrap.min.css"
+import App from './App';
 
 const SimpleComponent = (props) => <div>SimpleComponent</div>
 
@@ -19,7 +23,7 @@ function Hi() {
             <SimpleComponent />
 
                 </li>
-            <SimpleComponent />
+            <Home />
 
             </ul>
             {/* <div className="flex-item">1</div>
@@ -31,4 +35,4 @@ function Hi() {
     )
 }
 
-ReactDOM.render(<Hi />, document.getElementById('app'))
+ReactDOM.render(<Router><App /></Router>, document.getElementById('app'))
