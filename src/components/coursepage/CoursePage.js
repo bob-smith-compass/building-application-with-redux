@@ -9,6 +9,7 @@ export default class CoursePage extends Component {
             }
         }
         this.setState = this.setState.bind(this)
+        this.handleChange = this.handleChange.bind(this)
     }
     // handleChange = (event) => {
     handleChange(event) {
@@ -18,6 +19,7 @@ export default class CoursePage extends Component {
     render() {
         return (
             <form>
+                {JSON.stringify(this.state)}
                 <h2>Courses</h2>
                 <h3>Add Course</h3>
                 <input onChange={this.handleChange} value={this.state.course.title} />
