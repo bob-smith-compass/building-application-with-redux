@@ -6,6 +6,13 @@ import {BrowserRouter as Router} from 'react-router-dom'
 import "bootstrap/dist/css/bootstrap.min.css"
 import App from './App';
 
+/**
+ * Real Redux State
+ */
+import {Provider} from 'react-redux'
+
+
+
 const SimpleComponent = (props) => <div>SimpleComponent</div>
 
 function Hi() {
@@ -35,4 +42,5 @@ function Hi() {
     )
 }
 
+// ReactDOM.render(<Router><Provider><App /></Provider></Router>, document.getElementById('app'))
 ReactDOM.render(<Router><App /></Router>, document.getElementById('app'))
