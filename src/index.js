@@ -2,7 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './main.css'
 
+const SimpleComponent = (props) => <div>SimpleComponent</div>
+
 function Hi() {
+    debugger
     return (
         // <div id="container">
         <div>
@@ -12,7 +15,12 @@ function Hi() {
                 <li>3</li>
                 <li>4</li>
                 <li>5</li>
-                <li>6</li>
+                <li>
+            <SimpleComponent />
+
+                </li>
+            <SimpleComponent />
+
             </ul>
             {/* <div className="flex-item">1</div>
     <div className="flex-item">2</div>
