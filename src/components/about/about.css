@@ -1,9 +1,21 @@
 .about {
-    display: flex
+    display: flex;
+    /* flex-direction:row; */
+    /* flex-direction: column-reverse; */
+    flex-direction: row-reverse;
 }
 .item {
     flex-grow: 1
 }
-.item:first-child {
-    flex-grow: 80%;
+ul li.item:first-child {
+    flex-grow: 5;
+    border: solid 1px green;
+}
+ul li.item:nth-child(2) {
+    flex-grow: 1;
+    border: solid 1px red;
+}
+ul li.item:nth-child(3) {
+    flex-grow: 1;
+    border: solid 1px blue;
 }
