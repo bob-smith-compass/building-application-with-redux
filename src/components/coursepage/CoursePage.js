@@ -20,7 +20,8 @@ export default class CoursePage extends Component {
     handleSubmit = (event) => {
         // console.log(event);
         event.preventDefault();
-        console.log(`this.state.course.title`)
+        console.log(`this.state.course.title: `)
+        console.log(this.state.course.title)
     }
     render() {
         return (
