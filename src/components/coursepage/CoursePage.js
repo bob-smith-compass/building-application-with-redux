@@ -9,10 +9,11 @@ export default class CoursePage extends Component {
             }
         }
         this.setState = this.setState.bind(this)
-        this.handleChange = this.handleChange.bind(this)
+        // this.handleChange = this.handleChange.bind(this)
     }
-    // handleChange = (event) => {
-    handleChange(event) {
+    handleChange = (event) => {
+    // handleChange(event) {
+        // event.preventDefalut()
         const course = {...this.state.course, title: event.target.value};
         this.setState({course})
     }
