@@ -1,0 +1,9 @@
+.about {
+    display: flex
+}
+.item {
+    flex-grow: 1
+}
+.item:first-child {
+    flex-grow: 80%;
+}
