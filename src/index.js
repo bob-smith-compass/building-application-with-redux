@@ -8,6 +8,7 @@ import App from './App';
 import configureStore from './redux/configureStore';
 
 
+
 /**
  * Real Redux State
  */
@@ -45,6 +46,12 @@ function Hi() {
 }
 
 // ReactDOM.render(<Router><Provider><App /></Provider></Router>, document.getElementById('app'))
-ReactDOM.render(<Router><App /></Router>, document.getElementById('app'))
+ReactDOM.render(
+    <Provider>
+        <Router>
+            <App />
+        </Router>
+    </Provider>
+, document.getElementById('app'))
 
 export default Hi;
