@@ -7,8 +7,6 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import App from './App';
 import configureStore from './redux/configureStore';
 
-
-
 /**
  * Real Redux State
  */
