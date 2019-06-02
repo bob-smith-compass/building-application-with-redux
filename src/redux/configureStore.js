@@ -8,6 +8,5 @@ import reduxImmutableStateInvariant from 'redux-immutable-state-invariant'
 // }
 
 export default function configureStore(initialState) {
-    // return createStore(rootRecucer, initialState, applyMiddleware(reduxImmutableStateInvariant()));
-    return createStore(rootRecucer, initialState);
+    return createStore(rootRecucer, initialState, applyMiddleware(reduxImmutableStateInvariant()));
 }
