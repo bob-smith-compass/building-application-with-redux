@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
+import {connect} from 'react-redux'
 
-export default class CoursePage extends Component {
+class CoursePage extends Component {
     // constructor(props){
     // super(props)
     // this.state = {
@@ -36,3 +37,11 @@ export default class CoursePage extends Component {
         )
     }
 }
+
+function mapStateToProps() {
+    
+}
+function mapDispatchToProps() {
+    
+}
+export default connect(mapStateToProps, mapDispatchToProps) (CoursePage)
