@@ -1,8 +1,13 @@
 import { createStore, applyMiddleware, compose } from 'redux'
-import rootRecucer from './reducers' // index.js implied
+import rootRecucer from './reducers'; // index.js implied
 import reduxImmutableStateInvariant from 'redux-immutable-state-invariant'
 
-export default configureStore(initialState) {
-    const composeEnhancer = window.__REDUX_DEVTOOL_ESTENSION_COMPOSE__ || compose
-    return createStore(rootRecucer, initialState, applyMiddleware(reduxImmutableStateInvariant()));
+// export default function configureStore(initialState) {
+//     // const composeEnhancer = window.__REDUX_DEVTOOL_ESTENSION_COMPOSE__ || compose;
+//     return createStore(rootRecucer, initialState, applyMiddleware(reduxImmutableStateInvariant()));
+// }
+
+export default function configureStore(initialState) {
+    // return createStore(rootRecucer, initialState, applyMiddleware(reduxImmutableStateInvariant()));
+    return createStore(rootRecucer, initialState);
 }

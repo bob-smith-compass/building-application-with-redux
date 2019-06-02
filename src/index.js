@@ -2,15 +2,16 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './main.css'
 import Home from './components/home/Home';
-import {BrowserRouter as Router} from 'react-router-dom'
+import {BrowserRouter as Router} from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css"
 import App from './App';
+import configureStore from './redux/configureStore';
+
 
 /**
  * Real Redux State
  */
 import {Provider} from 'react-redux'
-import configureStore from './redux/configureStore'
 
 const store = configureStore()
 
@@ -45,3 +46,5 @@ function Hi() {
 
 // ReactDOM.render(<Router><Provider><App /></Provider></Router>, document.getElementById('app'))
 ReactDOM.render(<Router><App /></Router>, document.getElementById('app'))
+
+export default Hi;
