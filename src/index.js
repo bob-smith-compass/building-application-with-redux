@@ -47,7 +47,7 @@ function Hi() {
 
 // ReactDOM.render(<Router><Provider><App /></Provider></Router>, document.getElementById('app'))
 ReactDOM.render(
-    <Provider>
+    <Provider store={store}>
         <Router>
             <App />
         </Router>
