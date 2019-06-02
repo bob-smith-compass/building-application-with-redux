@@ -38,10 +38,12 @@ class CoursePage extends Component {
     }
 }
 
-function mapStateToProps() {
-    
+function mapStateToProps(state, ownProps) {
+    return {
+        courses: state.courses
+    }
 }
 function mapDispatchToProps() {
-    
+
 }
 export default connect(mapStateToProps, mapDispatchToProps) (CoursePage)
