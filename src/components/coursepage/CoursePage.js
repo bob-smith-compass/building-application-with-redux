@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
+import * as courseAction from '../../redux/actions/courseAction'
+import PropTypes from 'prop-types'
 
 class CoursePage extends Component {
+    static propTypes = {
+        dispatch: PropTypes.func.isRequired
+    }
     // constructor(props){
     // super(props)
     // this.state = {
@@ -22,6 +27,7 @@ class CoursePage extends Component {
         // console.log(event);
         event.preventDefault();
         console.log(`this.state.course.title: `)
+        this.props.dispatch(courseAction.createCourse(this.state.course))
         console.log(this.state.course.title)
     }
     render() {
